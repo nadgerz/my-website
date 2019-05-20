@@ -9,6 +9,7 @@ module.exports = {
   siteMetadata: {
     title: `The Website World of Steve Ingram`,
     author: `Steve Ingram`,
+    email: `stephen.a.ingram@gmail.com`,
   },
   plugins: ["gatsby-plugin-sass"],
 }

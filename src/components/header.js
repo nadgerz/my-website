@@ -15,13 +15,13 @@ const Header = () => {
     }
   `)
 
-  console.log(data)
+  // console.log(data)
 
   return (
     <header className={headerStyles.header}>
       <h1>
         <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.author}
+          {data.site.siteMetadata.title}
         </Link>
       </h1>
 
