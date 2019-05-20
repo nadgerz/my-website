@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import "../styles/header.module.scss"
+import headerStyles from "../styles/header.module.scss"
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link className="link" to="/">Home</Link>
+            <Link className={headerStyles.link} to="/">Home</Link>
           </li>
           <li>
             <Link to="/blog">Blog</Link>
