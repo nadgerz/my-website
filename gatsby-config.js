@@ -11,5 +11,14 @@ module.exports = {
     author: `Steve Ingram`,
     email: `stephen.a.ingram@gmail.com`,
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+  ],
 }
