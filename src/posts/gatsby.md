@@ -5,6 +5,8 @@ date: "2019-04-04"
 
 Learning Gatsby!
 
+![Grass]('./grass.png')
+
 ## Topics Covered
 
 1. gatsby
