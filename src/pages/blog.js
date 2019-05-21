@@ -20,19 +20,14 @@ const BlogPage = () => {
     }
   `)
 
-  console.clear()
-  console.log(data)
-  console.log(typeof data)
-
   return (
     <Layout>
       <h1>My Blog.</h1>
-      <p>Posts will show up here later on.</p>
-      {data.allMarkdownRemark.edges.map(node => {
-        console.log(node)
-        console.table(node)
-        console.log(typeof node)
-        const frontmatter = node.node.frontmatter
+
+      {
+        data.allMarkdownRemark.edges.map(node => {
+    
+          const frontmatter = node.node.frontmatter
 
         return (
           <ol>
@@ -40,7 +35,8 @@ const BlogPage = () => {
             <p>{frontmatter.date}</p>
           </ol>
         )
-      })}
+      })
+    }
     </Layout>
   )
 }
