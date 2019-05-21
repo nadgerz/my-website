@@ -24,13 +24,11 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <h1>My Blog.</h1>
+      <h1>My Blog!</h1>
 
       <ol>
         {data.allMarkdownRemark.edges.map(edge => {
           const { title, date } = edge.node.frontmatter
-          const pretty = JSON.stringify(edge, null, 4)
-          console.log(pretty)
           const { slug } = edge.node.fields
 
           return (
