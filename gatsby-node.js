@@ -14,7 +14,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-modules.exports.createPages = async ({ graphql, actions }) => {
+module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/blog.js`)
   // Query for markdown nodes to use in creating pages.
