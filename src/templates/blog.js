@@ -15,7 +15,7 @@ export const query = graphql`
   }
 `
 const Blog = props => {
-  console.log(JSON.stringify(props, null, 4))
+  // console.log(JSON.stringify(props, null, 4))
   const markdownRemark = props.data.markdownRemark
 
   const { title, date } = markdownRemark.frontmatter
@@ -24,8 +24,8 @@ const Blog = props => {
   return (
     <Layout>
       <h1>{title}</h1>
-      <h2>{date}</h2>
-      <p>{`${html}`}</p>
+      <p>{date}</p>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }
