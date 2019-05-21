@@ -5,7 +5,7 @@ date: "2019-04-04"
 
 Learning Gatsby!
 
-![Grass]('./grass.png')
+![Grass](./grass.png)
 
 ## Topics Covered
 
