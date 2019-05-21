@@ -24,16 +24,18 @@ const BlogPage = () => {
     <Layout>
       <h1>My Blog.</h1>
 
-      {data.allMarkdownRemark.edges.map(node => {
-        const frontmatter = node.node.frontmatter
+      <ol>
+        {data.allMarkdownRemark.edges.map(edge => {
+          const { title, date } = edge.node.frontmatter
 
-        return (
-          <ol>
-            <h2>{frontmatter.title}</h2>
-            <p>{frontmatter.date}</p>
-          </ol>
-        )
-      })}
+          return (
+            <li>
+              <h2>{title}</h2>
+              <p>{date}</p>
+            </li>
+          )
+        })}
+      </ol>
     </Layout>
   )
 }
