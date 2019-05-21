@@ -9,10 +9,12 @@ const BlogPage = () => {
       allMarkdownRemark {
         edges {
           node {
-            fileAbsolutePath
             frontmatter {
               title
               date
+            }
+            fields {
+              slug
             }
           }
         }
@@ -27,6 +29,7 @@ const BlogPage = () => {
       <ol>
         {data.allMarkdownRemark.edges.map(edge => {
           const { title, date } = edge.node.frontmatter
+          console.log(JSON.stringify(edge, null, 4))
 
           return (
             <li>

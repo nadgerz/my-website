@@ -21,7 +21,7 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // You can query for whatever data you want to create pages for e.g.
   // products, portfolio items, landing pages, etc.
   // Variables can be added as the second function parameter
-  const res = await graphql(`
+  const result = await graphql(`
     query {
       allMarkdownRemark {
         edges {
