@@ -28,15 +28,16 @@ const BlogPage = () => {
 
       <ol>
         {data.allMarkdownRemark.edges.map(edge => {
-          const { title, date } = edge.node.frontmatter
-          const { slug } = edge.node.fields
+          const node = edge.node
+          const { title, date } = node.frontmatter
+          const { slug } = node.fields
 
           return (
             <li key={slug}>
               <Link to={`/blog/${slug}`}>
                 <h2>{title}</h2>
+                <p>{date}</p>
               </Link>
-              <p>{date}</p>
             </li>
           )
         })}
