@@ -42,14 +42,7 @@ modules.exports.createPages = async ({ graphql, actions }) => {
       component: blogPostTemplate,
       path: `/blog/${edge.node.fields.slug}`,
       context: {
-        // Add optional context data to be inserted
-        // as props into the page component..
-        //
-        // The context data can also be used as
-        // arguments to the page GraphQL query.
-        //
-        // The page "path" is always available as a GraphQL
-        // argument.
+        slug: edge.node.fields.slug,
       },
     })
   })
