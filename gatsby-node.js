@@ -1,21 +1,23 @@
 const path = require("path")
 const util = require("util")
 
-module.exports.onCreateNode = ({ node, actions }) => {
-  const { createNodeField } = actions
+// NOTE: For Markdown we were generating the slug, but in Contentful we already have that.
 
-  if (node.internal.type === "MarkdownRemark") {
-    if (!util.isNullOrUndefined(node.fileAbsolutePath)) {
-      const slug = path.basename(node.fileAbsolutePath, ".md")
+// module.exports.onCreateNode = ({ node, actions }) => {
+//   const { createNodeField } = actions
 
-      createNodeField({
-        node,
-        name: "slug",
-        value: slug,
-      })
-    }
-  }
-}
+//   if (node.internal.type === "MarkdownRemark") {
+//     if (!util.isNullOrUndefined(node.fileAbsolutePath)) {
+//       const slug = path.basename(node.fileAbsolutePath, ".md")
+
+//       createNodeField({
+//         node,
+//         name: "slug",
+//         value: slug,
+//       })
+//     }
+//   }
+// }
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -26,27 +28,26 @@ module.exports.createPages = async ({ graphql, actions }) => {
   // Variables can be added as the second function parameter
   const result = await graphql(`
     query {
-      allMarkdownRemark {
+      allContentfulBlogPost {
         edges {
           node {
-            fields {
-              slug
-            }
+            slug
           }
         }
       }
     }
   `)
 
-  const edges = result.data.allMarkdownRemark.edges
+  const edges = result.data.allContentfulBlogPost.edges
 
   const filteredArray = edges.filter(edge => {
-    return !util.isNullOrUndefined(edge.node.fields)
+    return !util.isNullOrUndefined(edge.node.slug)
   })
 
   // Create blog post pages.
   filteredArray.forEach(edge => {
-    const slug = edge.node.fields.slug
+    const slug = edge.node.slug
+
     createPage({
       component: blogPostTemplate,
       path: `/blog/${slug}`,
