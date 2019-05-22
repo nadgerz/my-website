@@ -1,15 +1,16 @@
 {
   "name": "gatsby-starter-hello-world",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Gatsby FTW",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "env-cmd -f .env.development gatsby develop",
+    "develop": "env-cmd -f .env gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx,css,scss} ./*.js",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "clean": "rm -rf .cache",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
