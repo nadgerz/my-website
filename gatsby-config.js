@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `The Website World of Steve Ingram`,
+    title: `The (Website) World of Steve Ingram`,
     author: `Steve Ingram`,
     email: `stephen.a.ingram@gmail.com`,
   },
