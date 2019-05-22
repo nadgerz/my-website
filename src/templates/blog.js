@@ -19,11 +19,26 @@ export const query = graphql`
 const Blog = props => {
   const { title, publishDate, body } = props.data.contentfulBlogPost
 
+  const options = {
+    renderNode: {
+      "embedded-asset-block": node => {
+        const fields = node.data.target.fields
+
+        const locale = "en-US"
+
+        const alt = fields.title[locale]
+        const url = fields.file[locale].url
+
+        return <img alt={alt} url={url} />
+      },
+    },
+  }
+
   return (
     <Layout>
       <h1>{title}</h1>
       <p>{publishDate}</p>
-      {documentToReactComponents(body.internal.content)}
+      {documentToReactComponents(body.internal.content, options)}
     </Layout>
   )
 }
