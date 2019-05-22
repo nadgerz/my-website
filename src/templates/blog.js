@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { documentToReactComponents } from "@contentful/"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/layout"
 
 export const query = graphql`
@@ -9,7 +9,9 @@ export const query = graphql`
       title
       publishDate(formatString: "MMMM Do, YYYY")
       body {
-        json
+        internal {
+          content
+        }
       }
     }
   }
@@ -21,7 +23,7 @@ const Blog = props => {
     <Layout>
       <h1>{title}</h1>
       <p>{publishDate}</p>
-      {documentToReactComponents(body.json)}
+      {documentToReactComponents(body.internal.content)}
     </Layout>
   )
 }
