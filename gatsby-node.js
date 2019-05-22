@@ -6,13 +6,7 @@ module.exports.onCreateNode = ({ node, actions }) => {
 
   if (node.internal.type === "MarkdownRemark") {
     if (!util.isNullOrUndefined(node.fileAbsolutePath)) {
-      // console.log("@@@@@@@@@@@@@")
-      // console.log(node.fileAbsolutePath)
-      // console.log(JSON.stringify(node, null, 4))
       const slug = path.basename(node.fileAbsolutePath, ".md")
-      // console.log(slug)
-      // console.log(node.fileAbsolutePath)
-      // console.log("@@@@@@@@@@@@@")
 
       createNodeField({
         node,
@@ -45,21 +39,19 @@ module.exports.createPages = async ({ graphql, actions }) => {
   `)
 
   const edges = result.data.allMarkdownRemark.edges
-  // console.log(edges.length)
 
   const filteredArray = edges.filter(edge => {
     return !util.isNullOrUndefined(edge.node.fields)
   })
-  // console.log(filteredArray.length)
-  // console.log("!!!!!!!")
 
   // Create blog post pages.
   filteredArray.forEach(edge => {
+    const slug = edge.node.fields.slug
     createPage({
       component: blogPostTemplate,
-      path: `/blog/${edge.node.fields.slug}`,
+      path: `/blog/${slug}`,
       context: {
-        slug: edge.node.fields.slug,
+        slug: slug,
       },
     })
   })

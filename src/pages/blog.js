@@ -24,12 +24,28 @@ const BlogPage = () => {
     }
   `)
 
-  const filteredArray = data.allMarkdownRemark.edges.filter(edge => {
+  const contentfulData = useStaticQuery(graphql`
+    query {
+      allContentfulBlogPost(sort: { fields: publishDate, order: DESC }) {
+        edges {
+          node {
+            title
+            slug
+            publishDate(formatString: "MMMM Do, YYYY")
+          }
+        }
+      }
+    }
+  `)
+  // console.log(contentfulData)
+
+  let filteredArray = data.allMarkdownRemark.edges.filter(edge => {
     return !isNullOrUndefined(edge.node.fields)
   })
 
-  // console.log(JSON.stringify(data.allMarkdownRemark.edges))
-  // console.log(JSON.stringify(filteredArray))
+  filteredArray = contentfulData.allContentfulBlogPost.edges.filter(edge => {
+    return !isNullOrUndefined(edge.node.title)
+  })
 
   return (
     <Layout>
