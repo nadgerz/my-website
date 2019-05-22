@@ -3,18 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-// export const query = graphql`
-//   query bySlug($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       frontmatter {
-//         title
-//         date
-//       }
-//       html
-//     }
-//   }
-// `
-
 export const query = graphql`
   query bySlug($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {
@@ -25,6 +13,7 @@ export const query = graphql`
 `
 const Blog = props => {
   const { title, publishDate } = props.data.contentfulBlogPost
+
   return (
     <Layout>
       <h1>{title}</h1>
