@@ -6,24 +6,6 @@ import Layout from "../components/layout"
 import blogStyles from "./blog.module.scss"
 
 const BlogPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     allMarkdownRemark {
-  //       edges {
-  //         node {
-  //           frontmatter {
-  //             title
-  //             date
-  //           }
-  //           fields {
-  //             slug
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   const contentfulData = useStaticQuery(graphql`
     query {
       allContentfulBlogPost(sort: { fields: publishDate, order: DESC }) {

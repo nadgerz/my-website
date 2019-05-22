@@ -1,8 +1,19 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { graphql, useStaticQuery, Link } from "gatsby"
 
 const Head = () => {
-  return <Helmet title="banzai" />
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  return <Helmet title={data.site.siteMetadata.title} />
 }
 
 export default Head
