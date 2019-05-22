@@ -6,23 +6,23 @@ import Layout from "../components/layout"
 import blogStyles from "./blog.module.scss"
 
 const BlogPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-              date
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allMarkdownRemark {
+  //       edges {
+  //         node {
+  //           frontmatter {
+  //             title
+  //             date
+  //           }
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   const contentfulData = useStaticQuery(graphql`
     query {
@@ -38,14 +38,15 @@ const BlogPage = () => {
     }
   `)
   // console.log(contentfulData)
+  // let filteredArray = data.allMarkdownRemark.edges.filter(edge => {
+  //   return !isNullOrUndefined(edge.node.fields)
+  // })
 
-  let filteredArray = data.allMarkdownRemark.edges.filter(edge => {
-    return !isNullOrUndefined(edge.node.fields)
-  })
-
-  filteredArray = contentfulData.allContentfulBlogPost.edges.filter(edge => {
-    return !isNullOrUndefined(edge.node.title)
-  })
+  let filteredArray = contentfulData.allContentfulBlogPost.edges.filter(
+    edge => {
+      return !isNullOrUndefined(edge.node.title)
+    }
+  )
 
   return (
     <Layout>
@@ -54,14 +55,13 @@ const BlogPage = () => {
       <ol className={blogStyles.post}>
         {filteredArray.map(edge => {
           const node = edge.node
-          const { title, date } = node.frontmatter
-          const { slug } = node.fields
+          const { title, publishDate, slug } = node
 
           return (
             <li key={slug} className={blogStyles.post}>
               <Link to={`/blog/${slug}`}>
                 <h2>{title}</h2>
-                <p>{date}</p>
+                <p>{publishDate}</p>
               </Link>
             </li>
           )
