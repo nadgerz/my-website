@@ -31,6 +31,12 @@ $line-height-double: 4.2rem;
 
 .header {
   padding: 1rem 0 3rem;
+
+  h1 {
+    img {
+      padding: 0rem 0 0 0;
+    }
+  }
 }
 
 .nav-item {
