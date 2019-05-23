@@ -7,9 +7,9 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `The (Website) World of Steve Ingram`,
-    author: `Steve Ingram`,
-    email: `stephen.a.ingram@gmail.com`,
+    title: "Steve Ingram",
+    author: "Steve Ingram",
+    email: "stephen.a.ingram@gmail.com",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
