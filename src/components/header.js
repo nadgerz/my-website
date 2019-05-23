@@ -19,6 +19,7 @@ const Header = () => {
     <header className={headerStyles.header}>
       <h1>
         <Link className={headerStyles.title} to="/">
+          <img src="src/images/logo.png" />
           {data.site.siteMetadata.title}
         </Link>
       </h1>
@@ -34,6 +35,7 @@ const Header = () => {
               Home
             </Link>
           </li>
+
           <li>
             <Link
               className={headerStyles.navItem}
@@ -43,15 +45,37 @@ const Header = () => {
               Blog
             </Link>
           </li>
+
           <li>
             <Link
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
-              to="/contact"
+              to="/code"
             >
-              Contact
+              Code
             </Link>
           </li>
+
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/what-i-use"
+            >
+              What I Use...
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/resources"
+            >
+              Resources
+            </Link>
+          </li>
+
           <li>
             <Link
               className={headerStyles.navItem}
@@ -59,6 +83,16 @@ const Header = () => {
               to="/about"
             >
               About
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/contact"
+            >
+              Contact
             </Link>
           </li>
         </ul>

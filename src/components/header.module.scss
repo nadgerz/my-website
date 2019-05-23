@@ -1,3 +1,34 @@
+//---------------------------------------------------------
+//   FONT FAMILIES
+//---------------------------------------------------------
+
+@font-face {
+  font-family: "extortion";
+  src: url("src/fonts/kingthings-extortion.regular.ttf") format("truetype");
+}
+
+//---------------------------------------------------------
+//   SITE FONT STANDARDS
+//---------------------------------------------------------
+
+$font-size-paragraph: 1.4rem;
+
+$font-size-H1: 2.7rem;
+$font-size-H2: 2.2rem;
+$font-size-H3: 1.8rem;
+$font-size-H4: $font-size-paragraph;
+
+$line-height-standard: 2.1rem;
+$line-height-double: 4.2rem;
+
+@mixin font-family-serif($font) {
+  font-family: $font, "Times New Roman", serif;
+}
+
+@mixin font-family-sans-serif($font) {
+  font-family: $font, "Helvetica", "Arial", sans-serif;
+}
+
 .header {
   padding: 1rem 0 3rem;
 }
@@ -18,6 +49,8 @@
 }
 
 .title {
+  @include font-family-sans-serif(extortion);
+
   color: #000000;
   font-size: 3rem;
   text-decoration: none;
@@ -28,3 +61,20 @@
   list-style-type: none;
   margin: 0;
 }
+
+//---------------------------------------------------------
+//   RESPONSIVE
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+//---------------------------------------------------------
