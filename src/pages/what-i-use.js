@@ -8,6 +8,8 @@ const WhatIUsePage = () => {
   return (
     <Layout>
       <Head title="WhatIUse" />
+
+      <h1>What I Use...</h1>
     </Layout>
   )
 }

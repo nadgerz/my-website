@@ -8,6 +8,8 @@ const CodePage = () => {
   return (
     <Layout>
       <Head title="Code" />
+
+      <h1>Code</h1>
     </Layout>
   )
 }

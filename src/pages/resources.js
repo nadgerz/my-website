@@ -8,6 +8,8 @@ const ResourcesPage = () => {
   return (
     <Layout>
       <Head title="Code" />
+
+      <h1>Resources</h1>
     </Layout>
   )
 }
