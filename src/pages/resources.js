@@ -7,7 +7,7 @@ import Head from "../components/head"
 const ResourcesPage = () => {
   return (
     <Layout>
-      <Head title="Code" />
+      <Head title="Resources" />
 
       <h1>Resources</h1>
 

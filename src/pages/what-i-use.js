@@ -7,7 +7,7 @@ import Head from "../components/head"
 const WhatIUsePage = () => {
   return (
     <Layout>
-      <Head title="WhatIUse" />
+      <Head title="What I Use" />
 
       <h1>What I Use...</h1>
 

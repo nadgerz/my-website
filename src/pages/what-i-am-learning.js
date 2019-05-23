@@ -7,7 +7,7 @@ import Head from "../components/head"
 const WhatIAmLearningPage = () => {
   return (
     <Layout>
-      <Head title="WhatIAmLearning" />
+      <Head title="What I Am Learning" />
 
       <h1>What I Am Learning right now...</h1>
 
