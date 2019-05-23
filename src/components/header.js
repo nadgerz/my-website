@@ -53,7 +53,17 @@ const Header = () => {
               activeClassName={headerStyles.activeNavItem}
               to="/what-i-use"
             >
-              What I Use...
+              What I Use
+            </Link>
+          </li>
+
+          <li>
+            <Link
+              className={headerStyles.navItem}
+              activeClassName={headerStyles.activeNavItem}
+              to="/what-i-am-learning"
+            >
+              Learning
             </Link>
           </li>
 
