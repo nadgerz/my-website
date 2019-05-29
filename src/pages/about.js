@@ -23,8 +23,8 @@ const AboutPage = () => {
       <br />
       <p>
         That said, I haven't totally let go of the backend world. I am enjoying
-        learning Go(lang), mongodb, Swift, Node.js, Electron and all that DevOps
-        goodness, with Docker, Kubernetes, Travis CI and friends.
+        learning Kotlin, Go(lang), mongodb, Swift, Node.js, Electron and all
+        that DevOps goodness, with Docker, Kubernetes, Travis CI and friends.
       </p>
       <br />
       <p>
