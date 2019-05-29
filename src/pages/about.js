@@ -8,9 +8,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <Head title="About" />
-      <h1>
-        <Link to="/contact">About Me!</Link>
-      </h1>
+      <h1>About Me!</h1>
       <p>
         I am a Front-end/Back-end developer living and working in Berlin,
         Germany.
