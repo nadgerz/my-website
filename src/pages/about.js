@@ -22,15 +22,16 @@ const AboutPage = () => {
       </p>
       <br />
       <p>
-        That said, I haven't totally let go of the backend world. I am enjoying
-        learning Kotlin, Go(lang), mongodb, Swift, Node.js, Electron and all
-        that DevOps goodness, with Docker, Kubernetes, Travis CI and friends.
+        That said, I haven't totally let go of the backend world because I am
+        enjoying learning Kotlin, Go(lang), mongodb, Swift, Node.js, Electron
+        and all that DevOps goodness, with Docker, Kubernetes, Travis CI and
+        friends.
       </p>
       <br />
       <p>
-        My wish (hope?) is to work in a small to medium sized team where I can
-        continue to learn and contribute to projects/applications using any (or
-        all!) of the above.
+        My wish (hope!?) is to work in a small-to-medium sized team/company
+        where I can continue to learn and contribute to projects/applications
+        using any (or all!) of the above.
       </p>
       <br />
       <p>TL;DR - Ha! You did! This is at the end.</p>
