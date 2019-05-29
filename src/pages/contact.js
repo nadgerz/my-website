@@ -10,6 +10,7 @@ const ContactPage = () => {
 
       <h1>How to find me...</h1>
       <p>
+        // eslint-disable-next-line
         <a href="https://gmail.com" target="_blank">
           stephen.a.ingram@gmail.com
         </a>
