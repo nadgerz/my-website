@@ -10,7 +10,7 @@ const AboutPage = () => {
       <Head title="About" />
       <h1>About Me!</h1>
       <p>
-        I am a Front-end/Back-end developer living and working in Berlin,
+        I am a frontend/backend developer living and working in Berlin,
         Germany.
       </p>
       <br />
