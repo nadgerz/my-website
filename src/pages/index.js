@@ -15,7 +15,7 @@ const IndexPage = () => {
 
       <h2>I'm Steve, a full-stack developer.</h2>
 
-      <img src={me} alt="It's me, Steve!" />
+      <img src={me} alt="It's me, Steve!" width="285" height="427" />
 
       <p>
         Need a developer? <Link to="/contact">Contact me!</Link>
