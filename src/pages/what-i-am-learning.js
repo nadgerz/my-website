@@ -15,6 +15,7 @@ const WhatIAmLearningPage = () => {
           <h2>Languages/Frameworks/Libraries</h2>
           <ul>
             <li>React</li>
+            <li>React-Native</li>
             <li>Go</li>
             <li>Node.js</li>
             <li>TypeScript</li>
@@ -36,7 +37,8 @@ const WhatIAmLearningPage = () => {
           <h2>Languages/Frameworks/Libraries</h2>
           <ul>
             <li>Flutter/Dart</li>
-            <li>Electron</li>
+            <li>Kotlin</li>
+            <li>Swift</li>
           </ul>
         </li>
 

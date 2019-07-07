@@ -17,15 +17,15 @@ const AboutPage = () => {
         My early career was predominantly backend;
         C/Java/python/Sybase/PostgreSQL/postgis, running on various *nix
         systems, but in recent years I have been pivoting to frontend languages
-        and tooling, (React, TypeScript, Jest, ...) just because the pace of
-        change and invention there is more exciting to me.
+        and tooling, (React, React-Native, TypeScript, Jest, ...) just because
+        the pace of change and invention there is more exciting to me.
       </p>
       <br />
       <p>
         That said, I haven't totally let go of the backend world because I am
-        currently enjoying learning Kotlin, Go(lang), mongodb, Swift, Node.js,
-        Electron and all that DevOps goodness, with Docker, Kubernetes, Travis
-        CI and friends.
+        currently enjoying learning (trying to!) Kotlin, Go(lang), mongodb,
+        Node.js, and all that DevOps goodness, with Docker, Kubernetes and
+        friends.
       </p>
       <br />
       <p>
@@ -34,10 +34,6 @@ const AboutPage = () => {
         using any (or all!) of the above.
       </p>
       <br />
-      <p>TL;DR - Ha! You did! This is at the end.</p>
-      <p>
-        Life is short... coding is fun, but it is REALLY fun as part of a team.
-      </p>
     </Layout>
   )
 }

@@ -16,7 +16,8 @@ const WhatIUsePage = () => {
           <li>JavaScript</li>
           <li>Java</li>
           <li>React</li>
-          <li>Go</li>
+          <li>React-Native</li>
+          <li>Go(lang)</li>
           <li>Node.js</li>
         </ul>
       </li>

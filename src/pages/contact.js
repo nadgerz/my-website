@@ -14,6 +14,14 @@ const ContactPage = () => {
           stephen.a.ingram@gmail.com
         </a>
       </p>
+      <p>
+        <a
+          href="https://www.linkedin.com/in/stephen-ingram-3078aa19/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </p>
     </Layout>
   )
 }
