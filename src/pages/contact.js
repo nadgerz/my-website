@@ -10,7 +10,7 @@ const ContactPage = () => {
 
       <h1>How to find me...</h1>
       <p>
-        <a href="https://gmail.com" target="_blank">
+        <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
           stephen.a.ingram@gmail.com
         </a>
       </p>
@@ -18,6 +18,7 @@ const ContactPage = () => {
         <a
           href="https://www.linkedin.com/in/stephen-ingram-3078aa19/"
           target="_blank"
+          rel="noopener noreferrer"
         >
           LinkedIn
         </a>
