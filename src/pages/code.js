@@ -25,6 +25,26 @@ const CodePage = () => {
         </li>
 
         <li>
+          <h2>Splittr-lite. (very lite)</h2>
+          <p>
+            Just a fun little project to build a few different versions of a
+            Splittr-like app. One as a command-line, one in React for the web,
+            one in React-Native etc.
+          </p>
+          <ul>
+            <li>
+              <h2>node.js</h2>
+              <a
+                href="https://github.com/nadgerz/Wie-viel-schulde-ich-dir-nodejs"
+                target="__blank"
+              >
+                [git]
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
           <h2>Mini Mapper</h2>
           <p>Placeholder for my next personal project.</p>
           <p>
