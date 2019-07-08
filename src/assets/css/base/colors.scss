@@ -1,0 +1,52 @@
+$color-highlight: #FFEC7D; // yellow
+$color-highlight-darker: #E5C713; // dark yellow
+$color-highlight-text: #FFF4B1; // pale yellow
+
+
+$color-grey-medium: #9D979E;
+$color-grey-light: #DDE2E7;
+$color-grey-dark: #666666;
+
+$color-text: black;
+
+
+
+// --------------------------------------------------
+//   SASS COLOR FUNCTIONS
+// --------------------------------------------------
+
+// $color-darker: darken($color-highlight, 15%);
+// $color-lighter: lighten($color-highlight, 15%);
+
+// $color-change-saturation: saturate($color, 20%);
+// $color-change-saturation2: desaturate($color, 20%);
+
+// $color-to-grayscale: grayscale($color);
+
+// $color-get-complement-color: complement($color);
+
+// $color-invert: invert($color);
+
+// $color-mix-two: mix($color-1, $color-2, [$weight]);
+
+// $color-from-RGB: rgb($red, $green, $blue);
+// $color-from-RGBA: rgba($red, $green, $blue, $alpha);
+
+// $color-get-red-component: red($color);
+// $color-get-green-component: green($color);
+// $color-get-blue-component: blue($color);
+
+// $color-from-HSL: hsl($hue, $saturation, $lightness);
+// $color-from-HSLA: hsla($hue, $saturation, $lightness, $alpha);
+
+// $color-adjust-hue: adjust-hue($color, 20deg);
+
+// $color-make-more-transparent: transparentize($color, $amount)
+// $color-make-more-transparent2: fade-out($color, $amount);
+
+// $color-adjust: adjust-color($color, $red: -50, $green: 20, $blue: 220);
+// $color-adjust2: scale-color($color, $red: 10%, $green: 90%, $blue: 20%);
+
+// Returns the $light color when the $color is dark and the $dark color when the $color is light.
+// $color-get-contrast-color: contrast-color($color, shade($color, 75%), tint($color, 75%), 30%);
+
