@@ -1,0 +1,160 @@
+@import "base/colors";
+@import "base/measurements";
+@import "abstracts/mixins";
+
+//---------------------------------------------------------
+//   S I T E  CONTAINER
+//---------------------------------------------------------
+
+.site-container {
+  margin: 0 auto;
+  width: $main-container-full-width;
+  max-width: 100%;
+  padding: 0 $main-container-padding-sides;
+}
+
+.sidebar-left {
+  //@include border-layout-solid;
+  width: $sidebar-left-width;
+  flex-shrink: 0;
+}
+
+.container-one-sixth-width {
+  width: $container-one-sixth-width;
+  max-width: 100%;
+}
+
+.container-quarter-width {
+  width: $container-quarter-width;
+  max-width: 100%;
+}
+
+.container-third-width {
+  width: $container-third-width;
+  max-width: 100%;
+}
+
+.container-half-width {
+  width: $container-half-width;
+  max-width: 100%;
+}
+
+.container-two-thirds-width {
+  width: $container-two-thirds-width;
+  max-width: 100%;
+}
+
+.container-full-width {
+  width: $container-full-width;
+  max-width: 100%;
+}
+
+img {
+  max-height: 39rem;
+  width: auto;
+  max-width: 100%;
+}
+
+//---------------------------------------------------------
+//   H E A D E R
+//---------------------------------------------------------
+
+header {
+  position: fixed;
+  height: calc(#{$header-height} + .5rem);
+  width: $main-container-full-width;
+  max-width: 100%;
+  padding: 0 $main-container-padding-sides .5rem;
+
+  /// centering
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 10;
+
+  background: white;
+
+  h1 {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .nav-branding,
+  .header-right {
+    height: $header-height;
+    //height: calc(9rem + .5rem);
+    //padding-bottom: .5rem;
+  }
+
+  .header-right {
+    flex-shrink: 1;
+
+    width: calc(#{$container-full-width} + #{$sidebar-margin-right});
+    @include border-bottom($color-grey-medium);
+  }
+}
+
+
+//---------------------------------------------------------
+//  responsive HEADER
+
+
+@media screen and (max-width: 550px) {
+
+  .header-right {
+    border-bottom: none;
+    background: none;
+  }
+}
+
+//---------------------------------------------------------
+
+//---------------------------------------------------------
+//   M A I N
+//---------------------------------------------------------
+
+main {
+  //@include border-layout-solid;
+  width: 100%;
+
+  // leave room for the fixed header
+  //padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
+  padding-top: calc(#{$header-height} + #{$bottom-margin-big});
+
+  // simple way to get a sticky footer
+  min-height: calc(100vh - #{$footer-height});
+}
+
+
+//---------------------------------------------------------
+//  responsive MAIN
+
+
+@media screen and (max-width: 550px) {
+  .image-container {
+    margin: 0 auto;
+  }
+}
+
+//---------------------------------------------------------
+
+
+//---------------------------------------------------------
+//   F O O T E R
+//---------------------------------------------------------
+
+footer {
+  border-top: 2px solid $color-grey-light;
+  padding-top: $bottom-margin-mini;
+  width: 100%;
+  //max-width: 100%;
+  height: $footer-height;
+  color: $color-grey-medium;
+}
