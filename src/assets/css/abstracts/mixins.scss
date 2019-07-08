@@ -1,0 +1,72 @@
+@import "../base/measurements";
+@import "../base/colors";
+
+
+// STANDARDS FOR LAYOUTING
+
+@mixin border-layout-solid {
+  border: 2px solid red;
+}
+
+@mixin border-layout-dashed {
+  border: 2px dashed red;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+////////////////////////////////////
+
+@mixin border-bottom($color) {
+  border-bottom: 1px solid $color;
+}
+
+@mixin border1px($color) {
+  border: 1px solid $color;
+}
+
+@mixin link-style($color) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin removeListStyling {
+  list-style: none;
+}
+
+@mixin rounded7px {
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+}
+
+@mixin downloadButton {
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+  margin-bottom: $bottom-margin-mini;
+  @include border1px($color-grey-dark);
+
+  &:hover {
+    border: 3px solid $color-highlight;
+  }
+
+  &:active {
+    border: 3px solid $color-text;
+  }
+
+  h3,
+  h2 {
+    color: $color-text;
+    margin-bottom: $bottom-margin-mini;
+
+    &:hover {
+      //color: $color-grey-medium;
+    }
+  }
+}
