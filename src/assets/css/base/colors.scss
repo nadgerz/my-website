@@ -1,15 +1,12 @@
-$color-highlight: #FFEC7D; // yellow
-$color-highlight-darker: #E5C713; // dark yellow
-$color-highlight-text: #FFF4B1; // pale yellow
+$color-highlight: #ffec7d; // yellow
+$color-highlight-darker: #e5c713; // dark yellow
+$color-highlight-text: #fff4b1; // pale yellow
 
-
-$color-grey-medium: #9D979E;
-$color-grey-light: #DDE2E7;
+$color-grey-medium: #9d979e;
+$color-grey-light: #dde2e7;
 $color-grey-dark: #666666;
 
 $color-text: black;
-
-
 
 // --------------------------------------------------
 //   SASS COLOR FUNCTIONS
@@ -49,4 +46,3 @@ $color-text: black;
 
 // Returns the $light color when the $color is dark and the $dark color when the $color is light.
 // $color-get-contrast-color: contrast-color($color, shade($color, 75%), tint($color, 75%), 30%);
-

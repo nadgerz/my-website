@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd -f .env gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx,css,scss} ./*.js",
+    "format": "prettier --write \"./**/*.{js,jsx,css,htm,json,ts,html,sass,scss}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",

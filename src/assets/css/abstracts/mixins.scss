@@ -1,6 +1,5 @@
-@import "../base/measurements";
-@import "../base/colors";
-
+@import '../base/measurements';
+@import '../base/colors';
 
 // STANDARDS FOR LAYOUTING
 
@@ -14,7 +13,7 @@
 
 @mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
   }

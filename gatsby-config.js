@@ -7,17 +7,17 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Steve Ingram",
-    author: "Steve Ingram",
-    email: "stephen.a.ingram@gmail.com",
+    title: 'Steve Ingram',
+    author: 'Steve Ingram',
+    email: 'stephen.a.ingram@gmail.com',
   },
   plugins: [
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sass",
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "src",
+        name: 'src',
         path: `${__dirname}/src/`,
       },
     },
@@ -29,14 +29,14 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    "gatsby-plugin-sharp",
+    'gatsby-plugin-sharp',
     {
-      resolve: "gatsby-transformer-remark",
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          "gatsby-remark-relative-images",
+          'gatsby-remark-relative-images',
           {
-            resolve: "gatsby-remark-images",
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 750,
               linkImagesToOriginal: false,
@@ -46,4 +46,4 @@ module.exports = {
       },
     },
   ],
-}
+};

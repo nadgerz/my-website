@@ -1,5 +1,5 @@
-const path = require("path")
-const util = require("util")
+const path = require('path');
+const util = require('util');
 
 // NOTE: For Markdown we were generating the slug, but in Contentful we already have that.
 
@@ -20,8 +20,8 @@ const util = require("util")
 // }
 
 module.exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog.js`)
+  const { createPage } = actions;
+  const blogPostTemplate = path.resolve(`src/templates/blog.js`);
   // Query for markdown nodes to use in creating pages.
   // You can query for whatever data you want to create pages for e.g.
   // products, portfolio items, landing pages, etc.
@@ -36,17 +36,17 @@ module.exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `)
+  `);
 
-  const edges = result.data.allContentfulBlogPost.edges
+  const edges = result.data.allContentfulBlogPost.edges;
 
   const filteredArray = edges.filter(edge => {
-    return !util.isNullOrUndefined(edge.node.slug)
-  })
+    return !util.isNullOrUndefined(edge.node.slug);
+  });
 
   // Create blog post pages.
   filteredArray.forEach(edge => {
-    const slug = edge.node.slug
+    const slug = edge.node.slug;
 
     createPage({
       component: blogPostTemplate,
@@ -54,6 +54,6 @@ module.exports.createPages = async ({ graphql, actions }) => {
       context: {
         slug: slug,
       },
-    })
-  })
-}
+    });
+  });
+};

@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from '../components/layout';
+import Head from '../components/head';
 
 const ResourcesPage = () => {
   return (
@@ -22,7 +22,7 @@ const ResourcesPage = () => {
         <li>Pragmatic Programmer books</li>
       </ul>
     </Layout>
-  )
-}
+  );
+};
 
-export default ResourcesPage
+export default ResourcesPage;

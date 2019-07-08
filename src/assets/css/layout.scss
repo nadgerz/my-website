@@ -1,6 +1,6 @@
-@import "base/colors";
-@import "base/measurements";
-@import "abstracts/mixins";
+@import 'base/colors';
+@import 'base/measurements';
+@import 'abstracts/mixins';
 
 //---------------------------------------------------------
 //   S I T E  CONTAINER
@@ -61,10 +61,10 @@ img {
 
 header {
   position: fixed;
-  height: calc(#{$header-height} + .5rem);
+  height: calc(#{$header-height} + 0.5rem);
   width: $main-container-full-width;
   max-width: 100%;
-  padding: 0 $main-container-padding-sides .5rem;
+  padding: 0 $main-container-padding-sides 0.5rem;
 
   /// centering
   left: 50%;
@@ -101,13 +101,10 @@ header {
   }
 }
 
-
 //---------------------------------------------------------
 //  responsive HEADER
 
-
 @media screen and (max-width: 550px) {
-
   .header-right {
     border-bottom: none;
     background: none;
@@ -132,10 +129,8 @@ main {
   min-height: calc(100vh - #{$footer-height});
 }
 
-
 //---------------------------------------------------------
 //  responsive MAIN
-
 
 @media screen and (max-width: 550px) {
   .image-container {
@@ -144,7 +139,6 @@ main {
 }
 
 //---------------------------------------------------------
-
 
 //---------------------------------------------------------
 //   F O O T E R

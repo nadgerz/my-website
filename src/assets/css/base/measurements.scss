@@ -6,7 +6,9 @@ $sidebar-left-width: 10.5rem;
 
 $main-container-width: 72.5rem;
 $main-container-padding-sides: 2.1rem;
-$main-container-full-width: calc(#{$main-container-width} + (2 * #{$main-container-padding-sides}));
+$main-container-full-width: calc(
+  #{$main-container-width} + (2 * #{$main-container-padding-sides})
+);
 
 $container-one-sixth-width: 9rem;
 $container-quarter-width: 14rem;
@@ -18,12 +20,10 @@ $container-full-width: 59rem;
 
 $container-margin: 1rem;
 
-
 $burger-menu-dash-height: 2px;
 $burger-menu-width: 3rem;
 
 $bottom-margin-big: 6.3rem;
 $bottom-margin-medium: 4.2rem;
 $bottom-margin-small: 2.1rem;
-$bottom-margin-mini: .7rem;
-
+$bottom-margin-mini: 0.7rem;

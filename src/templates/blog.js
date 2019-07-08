@@ -1,9 +1,9 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import React from 'react';
+import { graphql } from 'gatsby';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from '../components/layout';
+import Head from '../components/head';
 
 export const query = graphql`
   query bySlug($slug: String!) {
@@ -17,24 +17,24 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 const Blog = props => {
-  const { title, publishDate, body } = props.data.contentfulBlogPost
+  const { title, publishDate, body } = props.data.contentfulBlogPost;
 
   const options = {
     renderNode: {
-      "embedded-asset-block": node => {
-        const fields = node.data.target.fields
+      'embedded-asset-block': node => {
+        const fields = node.data.target.fields;
 
-        const locale = "en-US"
+        const locale = 'en-US';
 
-        const alt = fields.title[locale]
-        const url = fields.file[locale].url
+        const alt = fields.title[locale];
+        const url = fields.file[locale].url;
 
-        return <img alt={alt} url={url} />
+        return <img alt={alt} url={url} />;
       },
     },
-  }
+  };
 
   return (
     <Layout>
@@ -44,7 +44,7 @@ const Blog = props => {
       <p>{publishDate}</p>
       {documentToReactComponents(body.internal.content, options)}
     </Layout>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

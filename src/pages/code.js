@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from '../components/layout';
+import Head from '../components/head';
 
 const CodePage = () => {
   return (
@@ -52,11 +52,11 @@ const CodePage = () => {
             the languages, frameworks and tools I have been trying to learn;
             like React/React-Native, Go(lang), mongodb, Docker, TypeScript.
           </p>
-          <Link to={"/mini-mapper"}>[git]</Link>
+          <Link to={'/mini-mapper'}>[git]</Link>
         </li>
       </ul>
     </Layout>
-  )
-}
+  );
+};
 
-export default CodePage
+export default CodePage;

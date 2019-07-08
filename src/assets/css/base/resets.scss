@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 
 *,
 *::before,
@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 //---------------------------------------------------------
 // Universal Box Sizing with Inheritance
@@ -20,7 +19,7 @@ html {
 
 *,
 *:before,
-*:after  {
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;

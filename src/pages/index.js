@@ -1,10 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from '../components/layout';
+import Head from '../components/head';
 
-import me from "./me.jpg"
+import me from './me.jpg';
 
 const IndexPage = () => {
   return (
@@ -21,7 +21,7 @@ const IndexPage = () => {
         Need a developer? <Link to="/contact">Contact me!</Link>
       </p>
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

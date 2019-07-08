@@ -3,8 +3,8 @@
 //---------------------------------------------------------
 
 @font-face {
-  font-family: "extortion";
-  src: url("../fonts/kingthings-extortion.regular.ttf") format("truetype");
+  font-family: 'extortion';
+  src: url('../fonts/kingthings-extortion.regular.ttf') format('truetype');
 }
 
 //---------------------------------------------------------
@@ -22,11 +22,11 @@ $line-height-standard: 2.1rem;
 $line-height-double: 4.2rem;
 
 @mixin font-family-serif($font) {
-  font-family: $font, "Times New Roman", serif;
+  font-family: $font, 'Times New Roman', serif;
 }
 
 @mixin font-family-sans-serif($font) {
-  font-family: $font, "Helvetica", "Arial", sans-serif;
+  font-family: $font, 'Helvetica', 'Arial', sans-serif;
 }
 
 .header {

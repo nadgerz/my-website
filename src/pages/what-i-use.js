@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from '../components/layout';
+import Head from '../components/head';
 
 const WhatIUsePage = () => {
   return (
@@ -51,7 +51,7 @@ const WhatIUsePage = () => {
         </li>
       </ul>
     </Layout>
-  )
-}
+  );
+};
 
-export default WhatIUsePage
+export default WhatIUsePage;
