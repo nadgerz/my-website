@@ -31,6 +31,8 @@ const WhatIAmLearningPage = () => {
         </li>
       </ul>
 
+      <hr />
+
       <h1>What's up next...</h1>
       <ul>
         <li>
@@ -46,9 +48,24 @@ const WhatIAmLearningPage = () => {
           <h2>Tools</h2>
           <ul>
             <li>CI/CD</li>
-            <li />
           </ul>
         </li>
+      </ul>
+
+      <hr />
+
+      <h1>Resources</h1>
+
+      <p>This is a list of resources I use/have used</p>
+
+      <ul>
+        <li>WesBos</li>
+        <li>JetBrains</li>
+        <li>egghead.io</li>
+        <li>frontendmasters.com</li>
+        <li>packtpub.com</li>
+        <li>Manning books</li>
+        <li>Pragmatic Programmer books</li>
       </ul>
     </Layout>
   )
