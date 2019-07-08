@@ -1,0 +1,37 @@
+@import "./colors";
+@import "./measurements";
+@import "../abstracts/mixins";
+
+
+//   change text highlight color
+//---------------------------------------------------------
+::selection {
+  background: $color-highlight-text; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $color-highlight-text; /* Gecko Browsers */
+}
+
+//
+//---------------------------------------------------------
+
+a {
+  text-decoration: none;
+  color: $color-grey-medium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid $color-grey-dark;
+  //font-size: 2rem;
+
+  &:hover {
+    border-bottom: 4px solid $color-highlight;
+  }
+
+  &:active {
+    color: $color-text;
+  }
+}
+
+.active-Link {
+  color: $color-text;
+}
