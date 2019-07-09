@@ -17,7 +17,7 @@ const CodePage = () => {
           <p>
             This website was built using Gatsby, React, SCSS and a smattering of
             Markdown and Contentful CMS goodness. It is based on the tutorial by
-            Andrew Mead, which you can find @ 
+            Andrew Mead, which you can find @
             <a
               href="https://www.youtube.com/watch?v=8t0vNu2fCCM"
               target="__blank"
