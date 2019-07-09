@@ -17,6 +17,7 @@ const IndexPage = () => {
         I'm Steve, a full-stack developer with over 20 years experience in
         backend and frontend development in GIS/mapping products for major US
         Utility companies.
+        <br />
         <br />I work with JavaScript, React, React-Native, Java, PostgreSQL and
         many of their friends.
       </h2>
