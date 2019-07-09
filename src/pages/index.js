@@ -24,7 +24,7 @@ const IndexPage = () => {
       <img src={me} alt="It's me, Steve!" width="285" height="427" />
 
       <p>
-        Need a developer? <Link to="/contact">Contact me!</Link>
+        Need some help? <Link to="/contact">Contact me!</Link>
       </p>
     </Layout>
   );
