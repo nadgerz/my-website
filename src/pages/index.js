@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Head from '../components/head';
 
-import me from './me.jpg';
+import me from '../assets/images/me.jpg';
 
 const IndexPage = () => {
   return (
