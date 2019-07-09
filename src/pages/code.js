@@ -17,9 +17,20 @@ const CodePage = () => {
           <p>
             This website was built using Gatsby, React, SCSS and a smattering of
             Markdown and Contentful CMS goodness. It is based on the tutorial by
-            Andrew Mead.
+            Andrew Mead called 'The Great gatsby Bootcamp', which you can find
+            <a
+              href="https://www.youtube.com/watch?v=8t0vNu2fCCM"
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              here.
+            </a>
           </p>
-          <a href="https://github.com/nadgerz/gatsby-bootcamp" target="__blank">
+          <a
+            href="https://github.com/nadgerz/the-website-of-the-one-and-only-stephen-a-ingram-esq"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
             [git]
           </a>
         </li>
@@ -37,6 +48,7 @@ const CodePage = () => {
               <a
                 href="https://github.com/nadgerz/Wie-viel-schulde-ich-dir-nodejs"
                 target="__blank"
+                rel="noopener noreferrer"
               >
                 [git]
               </a>
