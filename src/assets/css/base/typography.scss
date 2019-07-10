@@ -35,7 +35,7 @@ $line-height-standard: 2.1rem;
 $line-height-double: 4.2rem;
 
 @mixin font-family-serif($font) {
-  font-family: $font, 'Times New Roman', serif;
+  font-family: $font, 'Courier', 'Times New Roman', serif;
 }
 
 @mixin font-family-sans-serif($font) {
@@ -74,22 +74,25 @@ body {
 //---------------------------------------------------------
 
 h1 {
-  @include font-family-sans-serif(RobotoSlabLight);
+  @include font-family-serif(RobotoSlabRegular);
 
   font-size: $font-size-H1;
   line-height: 1.2;
+  text-transform: uppercase;
+  color: $color-grey-dark;
   //margin-top: $line-height-standard;
   //margin-bottom: $line-height-double;
 }
 
 h2 {
-  @include font-family-sans-serif(RobotoSlabRegular);
-  //font-family: inherit;
+  @include font-family-serif(RobotoSlabRegular);
+
   font-size: $font-size-H2;
   line-height: $line-height-double;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
+  color: $color-grey-dark;
   //margin-top: $line-height-standard;
   //margin-bottom: $line-height-standard;
 }
