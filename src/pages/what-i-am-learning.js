@@ -19,6 +19,7 @@ const WhatIAmLearningPage = () => {
             <li>Go</li>
             <li>Node.js</li>
             <li>TypeScript</li>
+            <li>Kotlin</li>
           </ul>
         </li>
 
@@ -39,7 +40,6 @@ const WhatIAmLearningPage = () => {
           <h2>Languages/Frameworks/Libraries</h2>
           <ul>
             <li>Flutter/Dart</li>
-            <li>Kotlin</li>
             <li>Swift</li>
           </ul>
         </li>
