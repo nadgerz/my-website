@@ -1,42 +1,14 @@
-//---------------------------------------------------------
-//   FONT FAMILIES
-//---------------------------------------------------------
-
-@font-face {
-  font-family: 'extortion';
-  src: url('../fonts/kingthings-extortion.regular.ttf') format('truetype');
-}
-
-//---------------------------------------------------------
-//   SITE FONT STANDARDS
-//---------------------------------------------------------
-
-$font-size-paragraph: 1.4rem;
-
-$font-size-H1: 2.7rem;
-$font-size-H2: 2.2rem;
-$font-size-H3: 1.8rem;
-$font-size-H4: $font-size-paragraph;
-
-$line-height-standard: 2.1rem;
-$line-height-double: 4.2rem;
-
-@mixin font-family-serif($font) {
-  font-family: $font, 'Times New Roman', serif;
-}
-
-@mixin font-family-sans-serif($font) {
-  font-family: $font, 'Helvetica', 'Arial', sans-serif;
-}
+@import "../assets/css/base/colors";
 
 .header {
+  border: 1px solid red;
   padding: 1rem 0 3rem;
 
-  h1 {
-    img {
-      padding: 0rem 0 0 0;
-    }
+  .branding {
+    border: 1px solid black;
+
   }
+
 }
 
 .nav-item {
@@ -54,33 +26,8 @@ $line-height-double: 4.2rem;
   color: #724515;
 }
 
-.title {
-  @include font-family-sans-serif(extortion);
-
-  color: #000000;
-  font-size: 3rem;
-  text-decoration: none;
-}
-
 .nav-list {
   display: flex;
   list-style-type: none;
   margin: 0;
 }
-
-//---------------------------------------------------------
-//   RESPONSIVE
-
-@media screen and (max-width: 860px) {
-  html {
-    font-size: 8px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  html {
-    font-size: 12px;
-  }
-}
-
-//---------------------------------------------------------
