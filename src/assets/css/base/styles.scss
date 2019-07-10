@@ -5,10 +5,10 @@
 //   change text highlight color
 //---------------------------------------------------------
 ::selection {
-  background: $color-highlight-text; /* WebKit/Blink Browsers */
+  background: $color-highlight; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: $color-highlight-text; /* Gecko Browsers */
+  background: $color-highlight; /* Gecko Browsers */
 }
 
 //
@@ -16,7 +16,7 @@
 
 a {
   text-decoration: none;
-  color: $color-grey-medium;
+  color: $color-grey-dark;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-bottom: 1px solid $color-grey-dark;
