@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "13.2.0",
-    "gatsby": "2.13.10",
+    "gatsby": "2.13.11",
     "gatsby-plugin-react-helmet": "3.1.0",
     "gatsby-plugin-sass": "2.1.0",
     "gatsby-plugin-sharp": "2.2.3",
@@ -30,9 +30,11 @@
     "react-helmet": "5.2.1"
   },
   "devDependencies": {
+    "core-js": "3.1.4",
     "env-cmd": "9.0.3",
     "jest": "24.8.0",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "regenerator-runtime": "0.13.2"
   },
   "repository": {
     "type": "git",
