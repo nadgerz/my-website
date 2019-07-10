@@ -3,18 +3,21 @@ import React from 'react';
 import Header from './header';
 import Footer from './footer';
 
-import '../styles/index.scss';
-import '../assets/css/base/typography.scss'
-import layoutStyles from './layout.module.scss';
+// import layoutStyles from './layout.module.scss';
+import '../assets/css/layout.scss';
+import '../assets/css/base/resets.scss';
+import '../assets/css/base/typography.scss';
+import '../assets/css/base/styles.scss';
+
 
 const Layout = props => {
   return (
-    <div className={layoutStyles.container}>
-      <div className={layoutStyles.content}>
-        <Header />
+    <div className={'site-container'}>
+      <Header/>
+      <main className={'main'}>
         {props.children}
-      </div>
-      <Footer />
+      </main>
+      <Footer/>
     </div>
   );
 };

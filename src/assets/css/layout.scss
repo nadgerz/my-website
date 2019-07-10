@@ -8,49 +8,13 @@
 
 .site-container {
   margin: 0 auto;
-  width: $main-container-full-width;
+  width: $main-container-width;
   max-width: 100%;
   padding: 0 $main-container-padding-sides;
 }
 
-.sidebar-left {
-  //@include border-layout-solid;
-  width: $sidebar-left-width;
-  flex-shrink: 0;
-}
-
-.container-one-sixth-width {
-  width: $container-one-sixth-width;
-  max-width: 100%;
-}
-
-.container-quarter-width {
-  width: $container-quarter-width;
-  max-width: 100%;
-}
-
-.container-third-width {
-  width: $container-third-width;
-  max-width: 100%;
-}
-
-.container-half-width {
-  width: $container-half-width;
-  max-width: 100%;
-}
-
-.container-two-thirds-width {
-  width: $container-two-thirds-width;
-  max-width: 100%;
-}
-
-.container-full-width {
-  width: $container-full-width;
-  max-width: 100%;
-}
-
 img {
-  max-height: 39rem;
+  max-height: 20rem;
   width: auto;
   max-width: 100%;
 }
@@ -60,54 +24,84 @@ img {
 //---------------------------------------------------------
 
 header {
-  position: fixed;
-  height: calc(#{$header-height} + 0.5rem);
-  width: $main-container-full-width;
-  max-width: 100%;
-  padding: 0 $main-container-padding-sides 0.5rem;
 
-  /// centering
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  z-index: 10;
+  //  position: fixed;
+  //  height: calc(#{$header-height} + 0.5rem);
+  //  width: $main-container-full-width;
+  //  max-width: 100%;
+  //  padding: 0 $main-container-padding-sides 0.5rem;
+  //
+  //  /// centering
+  //  left: 50%;
+  //  -webkit-transform: translateX(-50%);
+  //  -moz-transform: translateX(-50%);
+  //  -ms-transform: translateX(-50%);
+  //  -o-transform: translateX(-50%);
+  //  transform: translateX(-50%);
+  //  z-index: 10;
 
-  background: white;
+  display: flex;
+  align-items: flex-end;
 
-  h1 {
-    display: none;
+  margin-bottom: $bottom-margin-medium;
+
+  a {
+    border-bottom: 0;
   }
 
-  .header-content {
-    display: flex;
-    align-items: flex-end;
+  img {
+    margin-right: $container-margin;
+    //margin-bottom: -2rem;
+    width: 10rem;
   }
 
-  .nav-branding,
-  .header-right {
-    height: $header-height;
-    //height: calc(9rem + .5rem);
-    //padding-bottom: .5rem;
+  .nav-branding {
+    //border: 2px solid black;
+    width: 100%;
+
+    h1 {
+      margin-bottom: $bottom-margin-mini;
+    }
+
+    nav {
+      //padding-left: 12rem;
+
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+      }
+
+      li {
+        margin-right: 2rem;
+        list-style: none;
+      }
+    }
   }
 
-  .header-right {
-    flex-shrink: 1;
 
-    width: calc(#{$container-full-width} + #{$sidebar-margin-right});
-    @include border-bottom($color-grey-medium);
-  }
+  //.nav-branding,
+  //.header-right {
+  //  height: $header-height;
+  //  //height: calc(9rem + .5rem);
+  //  //padding-bottom: .5rem;
+  //}
+  //
+  //.header-right {
+  //  flex-shrink: 1;
+  //
+  //  width: calc(#{$container-full-width} + #{$sidebar-margin-right});
+  //  @include border-bottom($color-grey-dark);
+  //}
 }
 
 //---------------------------------------------------------
 //  responsive HEADER
 
-@media screen and (max-width: 550px) {
-  .header-right {
-    border-bottom: none;
-    background: none;
+@media screen and (max-width: 660px) {
+  header {
+    h1 {
+     font-size: 4rem;
+    }
   }
 }
 
@@ -118,23 +112,49 @@ header {
 //---------------------------------------------------------
 
 main {
-  //@include border-layout-solid;
-  width: 100%;
+  //width: 100%;
+  //
+  //// leave room for the fixed header
+  ////padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
+  //padding-top: calc(#{$header-height} + #{$bottom-margin-big});
+  //
+  //// simple way to get a sticky footer
+  //min-height: calc(100vh - #{$footer-height});
 
-  // leave room for the fixed header
-  //padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
-  padding-top: calc(#{$header-height} + #{$bottom-margin-big});
+  .home-wrapper {
+    display: flex;
+    flex-flow: row wrap;
 
-  // simple way to get a sticky footer
-  min-height: calc(100vh - #{$footer-height});
+    .profile-img {
+      text-align: center;
+      margin-left: calc(-2* #{$container-margin});
+      margin-right: 4rem;
+
+      img {
+        height: auto;
+      }
+    }
+
+    .profile-txt {
+      width: 61rem;
+      max-width: 100%;
+      margin-bottom: $bottom-margin-medium;
+    }
+  }
+
 }
 
 //---------------------------------------------------------
 //  responsive MAIN
 
-@media screen and (max-width: 550px) {
-  .image-container {
-    margin: 0 auto;
+@media screen and (max-width: 680px) {
+  main .home-wrapper {
+    //flex-flow: column;
+
+    .profile-img {
+      order: 1;
+      margin-left: 0;
+    }
   }
 }
 
@@ -145,10 +165,10 @@ main {
 //---------------------------------------------------------
 
 footer {
-  border-top: 2px solid $color-grey-light;
-  padding-top: $bottom-margin-mini;
-  width: 100%;
-  //max-width: 100%;
-  height: $footer-height;
-  color: $color-grey-medium;
+  //border-top: 2px solid $color-grey-light;
+  //padding-top: $bottom-margin-mini;
+  //width: 100%;
+  ////max-width: 100%;
+  //height: $footer-height;
+  //color: $color-grey-dark;
 }
