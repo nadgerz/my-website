@@ -9,15 +9,12 @@ import '../assets/css/base/resets.scss';
 import '../assets/css/base/typography.scss';
 import '../assets/css/base/styles.scss';
 
-
 const Layout = props => {
   return (
     <div className={'site-container'}>
-      <Header/>
-      <main className={'main'}>
-        {props.children}
-      </main>
-      <Footer/>
+      <Header />
+      <main className={'main'}>{props.children}</main>
+      <Footer />
     </div>
   );
 };
