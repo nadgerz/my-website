@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
+import logo from '../assets/images/branding/logo.png';
 import headerStyles from './header.module.scss';
-import logo from '../images/logo.png';
+import '../assets/css/base/typography.scss';
+
 
 const Header = () => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery( graphql`
     query {
       site {
         siteMetadata {
@@ -14,17 +16,24 @@ const Header = () => {
         }
       }
     }
-  `);
-
+  ` );
+  
   return (
     <header className={headerStyles.header}>
-      <h1>
-        <img alt="logo" src={logo} />
-        <Link className={headerStyles.title} to="/">
-          {data.site.siteMetadata.title}
-        </Link>
-      </h1>
-
+      <div className={'branding'}>
+        <img
+          className={'img-logo'}
+          src={logo}
+          alt="Steve Ingram fat fish logo"
+          aria-hidden
+        />
+        <h1>
+          <Link className={headerStyles.title} to="/">
+            {data.site.siteMetadata.title}
+          </Link>
+        </h1>
+      </div>
+      
       <nav>
         <ul className={headerStyles.navList}>
           <li>
@@ -36,7 +45,7 @@ const Header = () => {
               Home
             </Link>
           </li>
-
+          
           <li>
             <Link
               className={headerStyles.navItem}
@@ -46,7 +55,7 @@ const Header = () => {
               Code
             </Link>
           </li>
-
+          
           <li>
             <Link
               className={headerStyles.navItem}
@@ -56,7 +65,7 @@ const Header = () => {
               What I Use
             </Link>
           </li>
-
+          
           <li>
             <Link
               className={headerStyles.navItem}
@@ -66,7 +75,7 @@ const Header = () => {
               Learning
             </Link>
           </li>
-
+          
           <li>
             <Link
               className={headerStyles.navItem}
@@ -76,7 +85,7 @@ const Header = () => {
               About
             </Link>
           </li>
-
+          
           <li>
             <Link
               className={headerStyles.navItem}
