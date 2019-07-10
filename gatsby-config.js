@@ -21,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    /*
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -29,6 +30,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    */
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
