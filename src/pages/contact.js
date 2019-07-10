@@ -8,12 +8,14 @@ const ContactPage = () => {
     <Layout>
       <Head title="Contact" />
 
-      <h1>How to find me...</h1>
+      <h1>How to contact me/Where to find me</h1>
+
       <p>
         <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
           stephen.a.ingram@gmail.com
         </a>
       </p>
+
       <p>
         <a
           href="https://www.linkedin.com/in/stephen-ingram-3078aa19/"
@@ -21,6 +23,16 @@ const ContactPage = () => {
           rel="noopener noreferrer"
         >
           LinkedIn
+        </a>
+      </p>
+
+      <p>
+        <a
+          href="https://github.com/nadgerz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
         </a>
       </p>
     </Layout>
