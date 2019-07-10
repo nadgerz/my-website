@@ -48,9 +48,9 @@ const Header = () => {
               <Link
                 className={'navItem'}
                 activeClassName={'activeNavItem'}
-                to="/code"
+                to="/about"
               >
-                Code
+                About
               </Link>
             </li>
             
@@ -71,16 +71,6 @@ const Header = () => {
                 to="/what-i-am-learning"
               >
                 Learning
-              </Link>
-            </li>
-            
-            <li>
-              <Link
-                className={'navItem'}
-                activeClassName={'activeNavItem'}
-                to="/about"
-              >
-                About
               </Link>
             </li>
             
