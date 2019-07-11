@@ -19,18 +19,6 @@ const ContactPage = () => {
           Where to find me
         </h2>
 
-        <ul className={'social-icons'}>
-          <li className="mailto">
-            <a
-              href="mailto:stephen.a.ingram@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail />
-            </a>
-          </li>
-        </ul>
-
         <p>
           <a
             href="mailto:stephen.a.ingram@gmail.com"
