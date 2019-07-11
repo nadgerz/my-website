@@ -1,5 +1,5 @@
-$header-height: 9rem;
-$footer-height: 5rem;
+$header-height: 14rem;
+$footer-height: 6rem;
 
 $main-container-width: 90rem;
 $main-container-padding-sides: 2rem;
@@ -7,7 +7,7 @@ $main-container-full-width: calc(
   #{$main-container-width} + (2 * #{$main-container-padding-sides})
 );
 
-$container-full-width: 70rem;
+$container-full-width: 60rem;
 
 $container-margin: 2rem;
 

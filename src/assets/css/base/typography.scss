@@ -1,4 +1,6 @@
 @import 'colors.scss';
+@import 'measurements.scss';
+
 
 @font-face {
   font-family: 'RobotoSlabLight';
@@ -50,7 +52,7 @@ html {
 }
 
 body {
-  @include font-family-sans-serif(BasicParag);
+  @include font-family-sans-serif(RobotoLight);
 
   font-size: $font-size-paragraph;
   line-height: $line-height-standard;
@@ -80,6 +82,7 @@ h1 {
   line-height: 1.2;
   text-transform: uppercase;
   color: $color-grey-dark;
+  letter-spacing: 1px;
   //margin-top: $line-height-standard;
   //margin-bottom: $line-height-double;
 }
@@ -92,7 +95,7 @@ h2 {
   letter-spacing: 1px;
   color: $color-grey-dark;
   //margin-top: $line-height-standard;
-  //margin-bottom: $line-height-standard;
+  margin-bottom: $container-margin;
 }
 
 h3 {
@@ -100,10 +103,9 @@ h3 {
   font-size: $font-size-H3;
   line-height: $line-height-standard;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
+  color: $color-text;
   //margin-top: $line-height-standard;
-  //margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 h4 {
@@ -125,7 +127,7 @@ blockquote {
 }
 
 p {
-  margin: 0.5rem 0;
+  margin: $container-margin 0;
 }
 
 //---------------------------------------------------------
@@ -135,4 +137,7 @@ a {
   @include font-family-serif(RobotoSlabRegular);
 }
 
+ul {
+  margin-bottom: $container-margin;
+}
 //---------------------------------------------------------

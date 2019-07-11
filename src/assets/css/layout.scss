@@ -19,6 +19,18 @@ img {
   max-width: 100%;
 }
 
+.container {
+  width: $container-full-width;
+}
+
+.flex-item {
+  min-width: 21rem;
+}
+
+hr {
+  margin: $bottom-margin-small 0;
+}
+
 //---------------------------------------------------------
 //   H E A D E R
 //---------------------------------------------------------
@@ -41,7 +53,7 @@ header {
 
   display: flex;
   align-items: flex-end;
-
+  height: $header-height;
   margin-bottom: $bottom-margin-medium;
 
   a {
@@ -50,12 +62,10 @@ header {
 
   img {
     margin-right: $container-margin;
-    //margin-bottom: -2rem;
     width: 10rem;
   }
 
   .nav-branding {
-    //border: 2px solid black;
     width: 100%;
 
     h1 {
@@ -63,11 +73,10 @@ header {
     }
 
     nav {
-      //padding-left: 12rem;
-
       ul {
         display: flex;
         flex-flow: row wrap;
+        margin-left: 0;
       }
 
       li {
@@ -76,20 +85,6 @@ header {
       }
     }
   }
-
-  //.nav-branding,
-  //.header-right {
-  //  height: $header-height;
-  //  //height: calc(9rem + .5rem);
-  //  //padding-bottom: .5rem;
-  //}
-  //
-  //.header-right {
-  //  flex-shrink: 1;
-  //
-  //  width: calc(#{$container-full-width} + #{$sidebar-margin-right});
-  //  @include border-bottom($color-grey-dark);
-  //}
 }
 
 //---------------------------------------------------------
@@ -116,8 +111,8 @@ main {
   ////padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
   //padding-top: calc(#{$header-height} + #{$bottom-margin-big});
   //
-  //// simple way to get a sticky footer
-  //min-height: calc(100vh - #{$footer-height});
+  // simple way to get a sticky footer
+  min-height: calc(100vh - #{$footer-height} - #{$header-height} - #{$bottom-margin-medium});
 
   .home-wrapper {
     display: flex;
@@ -139,6 +134,22 @@ main {
       margin-bottom: $bottom-margin-medium;
     }
   }
+
+  .what-i-use, .learning-now, .up-next {
+    display: flex;
+    flex-flow: row wrap;
+
+    & > li {
+      list-style-type: none;
+
+    }
+
+    ul:first-of-type {
+      //border: 1px solid tomato;
+      list-style-position: inside;
+    }
+  }
+
 }
 
 //---------------------------------------------------------
@@ -146,11 +157,10 @@ main {
 
 @media screen and (max-width: 680px) {
   main .home-wrapper {
-    //flex-flow: column;
 
     .profile-img {
       order: 1;
-      margin-left: 0;
+      margin: 0 auto;
     }
   }
 }
@@ -162,10 +172,9 @@ main {
 //---------------------------------------------------------
 
 footer {
-  //border-top: 2px solid $color-grey-light;
-  //padding-top: $bottom-margin-mini;
-  //width: 100%;
-  ////max-width: 100%;
-  //height: $footer-height;
-  //color: $color-grey-dark;
+  background-color: $color-grey-medium;
+  padding: 1rem $container-margin;
+  width: 100%;
+  min-height: $footer-height;
+  color: white;
 }

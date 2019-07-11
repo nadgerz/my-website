@@ -33,7 +33,7 @@ const Header = () => {
             <li>
               <Link
                 className={'navItem'}
-                activeClassName={'activeNavItem'}
+                activeClassName={'active-Link'}
                 to="/"
               >
                 Home
@@ -43,7 +43,7 @@ const Header = () => {
             <li>
               <Link
                 className={'navItem'}
-                activeClassName={'activeNavItem'}
+                activeClassName={'active-Link'}
                 to="/about"
               >
                 About
@@ -53,7 +53,7 @@ const Header = () => {
             <li>
               <Link
                 className={'navItem'}
-                activeClassName={'activeNavItem'}
+                activeClassName={'active-Link'}
                 to="/what-i-use"
               >
                 What I Use
@@ -63,7 +63,7 @@ const Header = () => {
             <li>
               <Link
                 className={'navItem'}
-                activeClassName={'activeNavItem'}
+                activeClassName={'active-Link'}
                 to="/what-i-am-learning"
               >
                 Learning
@@ -73,7 +73,7 @@ const Header = () => {
             <li>
               <Link
                 className={'navItem'}
-                activeClassName={'activeNavItem'}
+                activeClassName={'active-Link'}
                 to="/contact"
               >
                 Contact
