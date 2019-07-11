@@ -69,6 +69,8 @@ const WhatIAmLearningPage = () => {
           <li>Manning books</li>
           <li>Pragmatic Programmer books</li>
         </ul>
+  
+        <hr/>
       </div>
     </Layout>
   );
