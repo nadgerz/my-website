@@ -144,6 +144,19 @@ main {
       margin-bottom: $bottom-margin-medium;
     }
   }
+
+  .what-i-use {
+    //border: 1px solid tomato;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    section {
+      //border: 1px solid tomato;
+      //flex-basis: 25%;
+      min-width: 20rem;
+    }
+  }
 }
 
 //---------------------------------------------------------
