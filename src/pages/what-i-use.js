@@ -3,16 +3,20 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from '../components/head';
 
-
 const WhatIUsePage = () => {
   return (
     <Layout>
-      <Head title="What I Use"/>
+      <Head title="What I Use" />
       <h2>What I Use...</h2>
       <div className={'what-i-use'}>
-        
         <section className={'flex-item'}>
-          <h3>Languages/<br />Frameworks/<br />Libraries</h3>
+          <h3>
+            Languages/
+            <br />
+            Frameworks/
+            <br />
+            Libraries
+          </h3>
           <ul>
             <li>JavaScript</li>
             <li>Java</li>

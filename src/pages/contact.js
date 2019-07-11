@@ -3,15 +3,17 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from '../components/head';
 
-
 const ContactPage = () => {
   return (
     <Layout>
-      <Head title="Contact"/>
-      
+      <Head title="Contact" />
+
       <div id={'contact'} className={'contact .container'}>
-        
-        <h2>How to contact me/<br/>Where to find me</h2>
+        <h2>
+          How to contact me/
+          <br />
+          Where to find me
+        </h2>
         <p>
           <a
             href="mailto:stephen.a.ingram@gmail.com"
@@ -21,7 +23,7 @@ const ContactPage = () => {
             stephen.a.ingram@gmail.com
           </a>
         </p>
-        
+
         <p>
           <a
             href="https://www.linkedin.com/in/stephen-ingram-3078aa19/"
@@ -31,7 +33,7 @@ const ContactPage = () => {
             LinkedIn
           </a>
         </p>
-        
+
         <p>
           <a
             href="https://github.com/nadgerz"

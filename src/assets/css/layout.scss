@@ -112,7 +112,9 @@ main {
   //padding-top: calc(#{$header-height} + #{$bottom-margin-big});
   //
   // simple way to get a sticky footer
-  min-height: calc(100vh - #{$footer-height} - #{$header-height} - #{$bottom-margin-medium});
+  min-height: calc(
+    100vh - #{$footer-height} - #{$header-height} - #{$bottom-margin-medium}
+  );
 
   .home-wrapper {
     display: flex;
@@ -135,13 +137,14 @@ main {
     }
   }
 
-  .what-i-use, .learning-now, .up-next {
+  .what-i-use,
+  .learning-now,
+  .up-next {
     display: flex;
     flex-flow: row wrap;
 
     & > li {
       list-style-type: none;
-
     }
 
     ul:first-of-type {
@@ -149,7 +152,6 @@ main {
       list-style-position: inside;
     }
   }
-
 }
 
 //---------------------------------------------------------
@@ -157,7 +159,6 @@ main {
 
 @media screen and (max-width: 680px) {
   main .home-wrapper {
-
     .profile-img {
       order: 1;
       margin: 0 auto;

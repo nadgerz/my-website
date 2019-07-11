@@ -3,19 +3,23 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from '../components/head';
 
-
 const WhatIAmLearningPage = () => {
   return (
     <Layout>
-      <Head title="What I Am Learning"/>
-      
+      <Head title="What I Am Learning" />
+
       <div id={'what-im-learning'} className={'what-im-learning'}>
-        
         <h2>What I Am Learning right now...</h2>
-        
+
         <ul className={'learning-now'}>
           <li className={'flex-item'}>
-            <h3>Languages/<br/>Frameworks/<br/>Libraries</h3>
+            <h3>
+              Languages/
+              <br />
+              Frameworks/
+              <br />
+              Libraries
+            </h3>
             <ul>
               <li>React</li>
               <li>React-Native</li>
@@ -25,7 +29,7 @@ const WhatIAmLearningPage = () => {
               <li>Kotlin</li>
             </ul>
           </li>
-          
+
           <li className={'flex-item'}>
             <h3>Tools</h3>
             <ul>
@@ -34,20 +38,26 @@ const WhatIAmLearningPage = () => {
             </ul>
           </li>
         </ul>
-        
-        <hr/>
-        
+
+        <hr />
+
         <h2>What's up next...</h2>
-        
+
         <ul className={'up-next flex-item'}>
           <li className={'flex-item'}>
-            <h3>Languages/<br/>Frameworks/<br/>Libraries</h3>
+            <h3>
+              Languages/
+              <br />
+              Frameworks/
+              <br />
+              Libraries
+            </h3>
             <ul>
               <li>Flutter/Dart</li>
               <li>Swift</li>
             </ul>
           </li>
-          
+
           <li className={'flex-item'}>
             <h3>Tools</h3>
             <ul>
@@ -55,11 +65,11 @@ const WhatIAmLearningPage = () => {
             </ul>
           </li>
         </ul>
-        <hr/>
-        
+        <hr />
+
         <h2>Resources</h2>
         <p>This is a list of resources I use/have used</p>
-  
+
         <ul className={'resources'}>
           <li>WesBos</li>
           <li>JetBrains</li>
@@ -69,8 +79,8 @@ const WhatIAmLearningPage = () => {
           <li>Manning books</li>
           <li>Pragmatic Programmer books</li>
         </ul>
-  
-        <hr/>
+
+        <hr />
       </div>
     </Layout>
   );

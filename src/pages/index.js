@@ -6,31 +6,32 @@ import Head from '../components/head';
 
 import me from '../assets/images/foto.png';
 
-
 const IndexPage = () => {
   return (
     <Layout>
-      <Head title="Home"/>
-      
+      <Head title="Home" />
+
       <div className={'home-wrapper'}>
         <div className={'profile-img'}>
-          <img src={me} alt="It's me, Steve!" width="285" height="427"/>
+          <img src={me} alt="It's me, Steve!" width="285" height="427" />
           <p>Need some help?</p>
           <Link to="/contact">Contact me!</Link>
-          <br/>
-          <br/>
+          <br />
+          <br />
           <Link to="/">Download CV</Link>
         </div>
-        
+
         <div className={'profile-txt'}>
           <h1>Hello.</h1>
           <h2>
-            <p>I'm Steve, a full-stack developer with over 20 years experience in
+            <p>
+              I'm Steve, a full-stack developer with over 20 years experience in
               backend and frontend development in GIS/mapping products for major
               US Utility companies.
             </p>
-            <p>I work with JavaScript, React, React-Native, Java, PostgreSQL
-              and many of their friends.
+            <p>
+              I work with JavaScript, React, React-Native, Java, PostgreSQL and
+              many of their friends.
             </p>
           </h2>
         </div>
