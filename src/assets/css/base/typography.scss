@@ -1,4 +1,6 @@
 @import 'colors.scss';
+@import 'measurements.scss';
+
 
 @font-face {
   font-family: 'RobotoSlabLight';
@@ -125,7 +127,7 @@ blockquote {
 }
 
 p {
-  margin: 0.5rem 0;
+  margin: $container-margin 0;
 }
 
 //---------------------------------------------------------
