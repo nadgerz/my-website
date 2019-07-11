@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  @include font-family-sans-serif(BasicParag);
+  @include font-family-sans-serif(RobotoLight);
 
   font-size: $font-size-paragraph;
   line-height: $line-height-standard;
@@ -82,6 +82,7 @@ h1 {
   line-height: 1.2;
   text-transform: uppercase;
   color: $color-grey-dark;
+  letter-spacing: 1px;
   //margin-top: $line-height-standard;
   //margin-bottom: $line-height-double;
 }
@@ -102,7 +103,7 @@ h3 {
   font-size: $font-size-H3;
   line-height: $line-height-standard;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  color: $color-text;
   //margin-top: $line-height-standard;
   margin-bottom: 1rem;
 }
