@@ -4,6 +4,8 @@ import Layout from '../components/layout';
 import Head from '../components/head';
 import { Link } from 'gatsby';
 
+import cvPDF from '../assets/pdf/2019_Ingram_CV.pdf';
+
 const AboutPage = () => {
   return (
     <Layout>
@@ -33,7 +35,7 @@ const AboutPage = () => {
           using any (or all!) of the above.
         </p>
 
-        <Link to="/">Download My CV</Link>
+        <Link to={cvPDF}>Download My CV</Link>
       </div>
     </Layout>
   );

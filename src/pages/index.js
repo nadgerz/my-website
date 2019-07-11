@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Head from '../components/head';
 
 import me from '../assets/images/foto.png';
+import cvPDF from '../assets/pdf/2019_Ingram_CV.pdf';
 
 const IndexPage = () => {
   return (
@@ -18,7 +19,7 @@ const IndexPage = () => {
           <Link to="/contact">Contact me!</Link>
           <br />
           <br />
-          <Link to="/">Download CV</Link>
+          <Link to={cvPDF}>Download My CV</Link>
         </div>
 
         <div className={'profile-txt'}>
