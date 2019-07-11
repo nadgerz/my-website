@@ -19,6 +19,10 @@ img {
   max-width: 100%;
 }
 
+.container {
+  width: $container-full-width;
+}
+
 //---------------------------------------------------------
 //   H E A D E R
 //---------------------------------------------------------
@@ -164,7 +168,7 @@ main {
 
 footer {
   background-color: $color-grey-medium;
-  padding: $container-margin;
+  padding:  1rem $container-margin;
   width: 100%;
   min-height: $footer-height;
   color: white;
