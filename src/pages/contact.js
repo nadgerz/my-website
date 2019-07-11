@@ -1,7 +1,11 @@
 import React from 'react';
 
+import { GitHub, LinkedIn, Mail } from '../assets/images/socialIcons';
+
 import Layout from '../components/layout';
 import Head from '../components/head';
+
+import '../assets/css/pages/contact.scss';
 
 const ContactPage = () => {
   return (
@@ -14,6 +18,19 @@ const ContactPage = () => {
           <br />
           Where to find me
         </h2>
+
+        <ul className={'social-icons'}>
+          <li className="mailto">
+            <a
+              href="mailto:stephen.a.ingram@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail />
+            </a>
+          </li>
+        </ul>
+
         <p>
           <a
             href="mailto:stephen.a.ingram@gmail.com"

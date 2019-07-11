@@ -15,11 +15,14 @@ const IndexPage = () => {
       <div className={'home-wrapper'}>
         <div className={'profile-img'}>
           <img src={me} alt="It's me, Steve!" width="285" height="427" />
+
           <p>Need some help?</p>
+
           <Link to="/contact">Contact me!</Link>
+
           <br />
           <br />
-          <Link to={cvPDF}>Download My CV</Link>
+
           <a href={cvPDF} download={`Stephen_A_Ingram_CV`}>
             Download My CV
           </a>

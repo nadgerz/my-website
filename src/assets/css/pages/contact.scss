@@ -1,0 +1,56 @@
+@import '../base/colors';
+@import '../base/measurements';
+@import '../abstracts/mixins';
+
+.contact {
+  h2 {
+    text-align: left;
+  }
+
+  aside {
+    margin-right: $sidebar-margin-right;
+  }
+
+  .contact-banner {
+    display: flex;
+    align-items: flex-start;
+
+    padding-bottom: $bottom-margin-medium;
+    margin-bottom: $bottom-margin-small;
+    @include border-bottom($color-grey-light);
+  }
+
+  .get-in-touch {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: $bottom-margin-small;
+    margin-bottom: $bottom-margin-small;
+    @include border-bottom($color-grey-light);
+
+    .social-icons {
+      display: flex;
+      flex-flow: row wrap;
+
+      li {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 3rem;
+        list-style: none;
+
+        a {
+          border-bottom: 0;
+        }
+      }
+
+      svg {
+        max-height: 100%;
+        max-width: 100%;
+        color: $color-grey-dark;
+
+        &:hover {
+          color: $color-highlight-darker;
+        }
+      }
+    }
+  }
+}
