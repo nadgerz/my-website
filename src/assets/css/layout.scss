@@ -76,6 +76,7 @@ header {
       ul {
         display: flex;
         flex-flow: row wrap;
+        margin-left: 0;
       }
 
       li {
@@ -140,6 +141,12 @@ main {
 
     & > li {
       list-style-type: none;
+
+    }
+
+    ul:first-of-type {
+      //border: 1px solid tomato;
+      list-style-position: inside;
     }
   }
 
