@@ -36,6 +36,10 @@ const AboutPage = () => {
         </p>
 
         <Link to={cvPDF}>Download My CV</Link>
+
+        <a href={cvPDF} download={`Stephen_A_Ingram_CV`}>
+          Download My CV
+        </a>
       </div>
     </Layout>
   );
