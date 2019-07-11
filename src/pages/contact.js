@@ -11,7 +11,11 @@ const ContactPage = () => {
       <h1>How to contact me/Where to find me</h1>
 
       <p>
-        <a href="https://gmail.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:stephen.a.ingram@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           stephen.a.ingram@gmail.com
         </a>
       </p>

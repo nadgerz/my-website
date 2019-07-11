@@ -3,9 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 
 import logo from '../assets/images/branding/logo.png';
 
-
 const Header = () => {
-  const data = useStaticQuery( graphql`
+  const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -14,8 +13,8 @@ const Header = () => {
         }
       }
     }
-  ` );
-  
+  `);
+
   return (
     <header className={'header'}>
       <Link className={'title'} to="/">
@@ -27,11 +26,8 @@ const Header = () => {
         />
       </Link>
       <div className={'nav-branding'}>
-        
-        <h1>
-          {data.site.siteMetadata.title}
-        </h1>
-        
+        <h1>{data.site.siteMetadata.title}</h1>
+
         <nav>
           <ul className={'navList'}>
             <li>
@@ -43,37 +39,7 @@ const Header = () => {
                 Home
               </Link>
             </li>
-            
-            <li>
-              <Link
-                className={'navItem'}
-                activeClassName={'activeNavItem'}
-                to="/code"
-              >
-                Code
-              </Link>
-            </li>
-            
-            <li>
-              <Link
-                className={'navItem'}
-                activeClassName={'activeNavItem'}
-                to="/what-i-use"
-              >
-                What I Use
-              </Link>
-            </li>
-            
-            <li>
-              <Link
-                className={'navItem'}
-                activeClassName={'activeNavItem'}
-                to="/what-i-am-learning"
-              >
-                Learning
-              </Link>
-            </li>
-            
+
             <li>
               <Link
                 className={'navItem'}
@@ -83,7 +49,27 @@ const Header = () => {
                 About
               </Link>
             </li>
-            
+
+            <li>
+              <Link
+                className={'navItem'}
+                activeClassName={'activeNavItem'}
+                to="/what-i-use"
+              >
+                What I Use
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                className={'navItem'}
+                activeClassName={'activeNavItem'}
+                to="/what-i-am-learning"
+              >
+                Learning
+              </Link>
+            </li>
+
             <li>
               <Link
                 className={'navItem'}
