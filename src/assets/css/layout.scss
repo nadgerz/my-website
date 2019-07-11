@@ -41,7 +41,7 @@ header {
 
   display: flex;
   align-items: flex-end;
-
+  height: $header-height;
   margin-bottom: $bottom-margin-medium;
 
   a {
@@ -110,14 +110,15 @@ header {
 //---------------------------------------------------------
 
 main {
+
   //width: 100%;
   //
   //// leave room for the fixed header
   ////padding-top: calc(#{$bottom-margin-small} + #{$bottom-margin-big});
   //padding-top: calc(#{$header-height} + #{$bottom-margin-big});
   //
-  //// simple way to get a sticky footer
-  //min-height: calc(100vh - #{$footer-height});
+  // simple way to get a sticky footer
+  min-height: calc(100vh - #{$footer-height} - #{$header-height} - #{$bottom-margin-medium});
 
   .home-wrapper {
     display: flex;
@@ -162,10 +163,9 @@ main {
 //---------------------------------------------------------
 
 footer {
-  //border-top: 2px solid $color-grey-light;
-  //padding-top: $bottom-margin-mini;
-  //width: 100%;
-  ////max-width: 100%;
-  //height: $footer-height;
-  //color: $color-grey-dark;
+  background-color: $color-grey-medium;
+  padding: $container-margin;
+  width: 100%;
+  min-height: $footer-height;
+  color: white;
 }
