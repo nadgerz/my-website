@@ -3,16 +3,16 @@ import React from 'react';
 import Layout from '../components/layout';
 import Head from '../components/head';
 
+
 const WhatIUsePage = () => {
   return (
     <Layout>
-      <Head title="What I Use" />
-
-      <h1>What I Use...</h1>
-
-      <ul>
-        <li>
-          <h2>Languages/Frameworks/Libraries</h2>
+      <Head title="What I Use"/>
+      <h2>What I Use...</h2>
+      <div className={'what-i-use'}>
+        
+        <section>
+          <h3>Languages/<br />Frameworks/<br />Libraries</h3>
           <ul>
             <li>JavaScript</li>
             <li>Java</li>
@@ -21,35 +21,32 @@ const WhatIUsePage = () => {
             <li>Go(lang)</li>
             <li>Node.js</li>
           </ul>
-        </li>
-
-        <li>
-          <h2>Editors/IDEs</h2>
+        </section>
+        <section>
+          <h3>Editors/IDEs</h3>
           <ul>
             <li>vim</li>
             <li>WebStorm</li>
             <li>IntelliJ</li>
           </ul>
-        </li>
-
-        <li>
-          <h2>Tools</h2>
+        </section>
+        <section>
+          <h3>Tools</h3>
           <ul>
             <li>Docker</li>
             <li>Jest</li>
             <li>Prettier</li>
             <li>ESLint</li>
           </ul>
-        </li>
-
-        <li>
-          <h2>Databases</h2>
+        </section>
+        <section>
+          <h3>Databases</h3>
           <ul>
             <li>PostgreSQL</li>
             <li>mongodb</li>
           </ul>
-        </li>
-      </ul>
+        </section>
+      </div>
     </Layout>
   );
 };
