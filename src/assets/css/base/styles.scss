@@ -32,5 +32,9 @@ a {
 }
 
 .active-Link {
-  color: $color-text;
+  color: $color-highlight-darker;
+}
+
+ul {
+  list-style-type: square;
 }
