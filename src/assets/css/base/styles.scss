@@ -23,7 +23,7 @@ a {
   //font-size: 2rem;
 
   &:hover {
-    border-bottom: 4px solid $color-highlight;
+    border-bottom: 3px solid $color-highlight;
   }
 
   &:active {
@@ -33,6 +33,7 @@ a {
 
 .active-Link {
   color: $color-highlight-darker;
+  border-bottom: 3px solid $color-highlight;
 }
 
 ul {

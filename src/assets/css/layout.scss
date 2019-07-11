@@ -23,6 +23,14 @@ img {
   width: $container-full-width;
 }
 
+.flex-item {
+  min-width: 21rem;
+}
+
+hr {
+  margin: $bottom-margin-medium 0;
+}
+
 //---------------------------------------------------------
 //   H E A D E R
 //---------------------------------------------------------
@@ -54,12 +62,10 @@ header {
 
   img {
     margin-right: $container-margin;
-    //margin-bottom: -2rem;
     width: 10rem;
   }
 
   .nav-branding {
-    //border: 2px solid black;
     width: 100%;
 
     h1 {
@@ -67,8 +73,6 @@ header {
     }
 
     nav {
-      //padding-left: 12rem;
-
       ul {
         display: flex;
         flex-flow: row wrap;
@@ -80,20 +84,6 @@ header {
       }
     }
   }
-
-  //.nav-branding,
-  //.header-right {
-  //  height: $header-height;
-  //  //height: calc(9rem + .5rem);
-  //  //padding-bottom: .5rem;
-  //}
-  //
-  //.header-right {
-  //  flex-shrink: 1;
-  //
-  //  width: calc(#{$container-full-width} + #{$sidebar-margin-right});
-  //  @include border-bottom($color-grey-dark);
-  //}
 }
 
 //---------------------------------------------------------
@@ -114,7 +104,6 @@ header {
 //---------------------------------------------------------
 
 main {
-
   //width: 100%;
   //
   //// leave room for the fixed header
@@ -145,18 +134,15 @@ main {
     }
   }
 
-  .what-i-use {
-    //border: 1px solid tomato;
+  .what-i-use, .learning-now, .up-next {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
 
-    section {
-      //border: 1px solid tomato;
-      //flex-basis: 25%;
-      min-width: 20rem;
+    & > li {
+      list-style-type: none;
     }
   }
+
 }
 
 //---------------------------------------------------------
@@ -164,7 +150,6 @@ main {
 
 @media screen and (max-width: 680px) {
   main .home-wrapper {
-    //flex-flow: column;
 
     .profile-img {
       order: 1;
@@ -181,7 +166,7 @@ main {
 
 footer {
   background-color: $color-grey-medium;
-  padding:  1rem $container-margin;
+  padding: 1rem $container-margin;
   width: 100%;
   min-height: $footer-height;
   color: white;
