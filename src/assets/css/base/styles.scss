@@ -36,6 +36,12 @@ a {
   border-bottom: 3px solid $color-highlight;
 }
 
+header {
+  a:hover {
+    border-bottom: 0;
+  }
+}
+
 ul {
   list-style-type: square;
   //list-style-position: inside;
