@@ -7,7 +7,9 @@ const WhatIUsePage = () => {
   return (
     <Layout>
       <Head title="What I Use" />
+
       <h2>What I Use...</h2>
+
       <div className={'what-i-use'}>
         <section className={'flex-item'}>
           <h3>
@@ -17,6 +19,7 @@ const WhatIUsePage = () => {
             <br />
             Libraries
           </h3>
+
           <ul>
             <li>JavaScript</li>
             <li>Java</li>
@@ -26,16 +29,10 @@ const WhatIUsePage = () => {
             <li>Node.js</li>
           </ul>
         </section>
-        <section className={'flex-item'}>
-          <h3>Editors/IDEs</h3>
-          <ul>
-            <li>vim</li>
-            <li>WebStorm</li>
-            <li>IntelliJ</li>
-          </ul>
-        </section>
+
         <section className={'flex-item'}>
           <h3>Tools</h3>
+
           <ul>
             <li>Docker</li>
             <li>Jest</li>
@@ -43,11 +40,23 @@ const WhatIUsePage = () => {
             <li>ESLint</li>
           </ul>
         </section>
+
         <section className={'flex-item'}>
           <h3>Databases</h3>
+
           <ul>
             <li>PostgreSQL</li>
             <li>mongodb</li>
+          </ul>
+        </section>
+
+        <section className={'flex-item'}>
+          <h3>Editors/IDEs</h3>
+
+          <ul>
+            <li>vim</li>
+            <li>WebStorm</li>
+            <li>IntelliJ</li>
           </ul>
         </section>
       </div>
